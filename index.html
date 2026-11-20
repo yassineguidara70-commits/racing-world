@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Racing World</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 6%;
+    background: #111;
+    border-bottom: 2px solid #e50920;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.logo span {
+    color: red;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul a:hover {
+    color: red;
+}
+
+/* HERO */
+.hero {
+    height: 600px;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
+    url("images/gtr.jpg") center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 65px;
+    font-style: italic;
+}
+
+.hero h1 span {
+    color: red;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px;
+    color: #ddd;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 30px;
+    background: #e50920;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: white;
+    color: red;
+    transform: scale(1.08);
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 35px 10px;
+    background: #141414;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature {
+    text-align: center;
+    font-size: 18px;
+    color: red;
+}
+
+.feature p {
+    color: white;
+    margin-top: 10px;
+}
+
+/* SECTION */
+section {
+    padding: 55px 6%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.section-title span {
+    color: red;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #171717;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #333;
+    transition: .4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: red;
+    box-shadow: 0 0 20px #e5092055;
+}
+
+.card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #aaa;
+    margin-bottom: 18px;
+}
+
+/* ABOUT */
+.about {
+    background: #141414;
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+    color: #ccc;
+    font-size: 17px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #050505;
+    border-top: 1px solid #333;
+    color: #aaa;
+}
+
+footer span {
+    color: red;
+}
+
+/* MOBILE */
+@media(max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 13px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero {
+        height: 450px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">Racing <span>World</span></div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#cars">Cars</a></li>
+        <li><a href="#motorcycles">Motorcycles</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="home">
+    <div>
+        <h1>Racing <span>World</span></h1>
+        <p>Cars • Motorcycles • Passion</p>
+        <a href="#cars" class="btn">Explore More →</a>
+    </div>
+</div>
+
+<!-- FEATURES -->
+<div class="features">
+    <div class="feature">
+        ⚡
+        <p>High Performance</p>
+    </div>
+
+    <div class="feature">
+        🏁
+        <p>Racing Events</p>
+    </div>
+
+    <div class="feature">
+        🏍️
+        <p>Motorcycles</p>
+    </div>
+
+    <div class="feature">
+        🌍
+        <p>Car News</p>
+    </div>
+
+    <div class="feature">
+        🏆
+        <p>Tuning & Mods</p>
+    </div>
+</div>
+
+<!-- CARS -->
+<section id="cars">
+    <h1 class="section-title">Our <span>Favorite Cars</span></h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="image/pexels-ishankulshrestha69-9347165.jpg" alt="Nissan GTR">
+            <div class="card-content">
+                <h2>Nissan GT-R</h2>
+                <p>Legend Never Dies.</p>
+                <a href="#about" class="btn">View Details →</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image/audirs7.jpg" alt="Audi RS7">
+            <div class="card-content">
+                <h2>Audi RS7</h2>
+                <p>Power Meets Elegance.</p>
+                <a href="#about" class="btn">View Details →</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image/bmwm4.jpg" alt="BMW M4">
+            <div class="card-content">
+                <h2>BMW M4</h2>
+                <p>Born To Perform.</p>
+                <a href="#about" class="btn">View Details →</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- MOTORCYCLES -->
+<section id="motorcycles">
+    <h1 class="section-title">Our <span>Motorcycles</span></h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="image/bmw.jpg" alt="Sport Motorcycle">
+            <div class="card-content">
+                <h2>Sport Bikes</h2>
+                <p>Feel The Freedom.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image/r1.jpg" alt="Yamaha">
+            <div class="card-content">
+                <h2>Yamaha R1</h2>
+                <p>Pure Adrenaline.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h1 class="section-title">About <span>Us</span></h1>
+
+    <p>
+        Welcome to Racing World!
+        Discover the amazing world of supercars,
+        sport motorcycles and automotive passion.
+        From Nissan GT-R to Audi RS7,
+        we share our love for speed and design.
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>Dream It ... Drive It ...</p>
+    <br>
+    <p>© 2026 <span>Racing World</span>. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+    
+</body>
+</html>
